@@ -8159,6 +8159,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg- {
+  --bs-bg-opacity: 1;
+  background-color: rgb(218, 177, 218) !important;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -11134,3 +11139,11 @@ footer.footer .social-link:hover {
   grid-column-end: 4;
 }
 
+img {
+  transition:transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(1.5); /* or some other value */
+  transform:scale(1.5);
+}
