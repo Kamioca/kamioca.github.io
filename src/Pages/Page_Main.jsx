@@ -52,18 +52,16 @@ export default function Page_Main() {
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/Capstone"); }} >Capstone Project</Button>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/2DArt"); }} >2D</Button>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onResumeClick(); }} >Resume</Button>
-            </Stack>
-          </Grid>
-          <Grid size={12} item>
-            <Box style={{ height: "2vh" }} ></Box>
-            <Stack direction="row" spacing={2}>
-              <Button variant="text" size="small" style={{display: "flex", flexDirection: "column"}} onClick={() => { openLinkInNewTab("https://www.linkedin.com/in/byung-hun-lee/"); }}>
-                <img src={linkedinImage} width="35" alt="linkedin"/>
-              </Button>
-              <Button variant="text" size="small" style={{display: "flex", flexDirection: "column"}} onClick={() => { openLinkInNewTab("https://www.artstation.com/ariska/"); }}>
-                <img src={artstationImage} width="35" alt="artstation"/>
-              </Button>
-            </Stack>
+                  </Stack>
+                  <Box style={{ height: "2vh" }} ></Box>
+                  <Stack direction="row" spacing={2}>
+                      <Button variant="text" size="small" style={{ display: "flex", flexDirection: "column" }} onClick={() => { openLinkInNewTab("https://www.linkedin.com/in/byung-hun-lee/"); }}>
+                          <img src={linkedinImage} width="35" alt="linkedin" />
+                      </Button>
+                      <Button variant="text" size="small" style={{ display: "flex", flexDirection: "column" }} onClick={() => { openLinkInNewTab("https://www.artstation.com/ariska/"); }}>
+                          <img src={artstationImage} width="35" alt="artstation" />
+                      </Button>
+                  </Stack>
           </Grid>
       </Grid>
     </div>

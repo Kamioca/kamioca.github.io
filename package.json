@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://kamioca.github.io/kamioca.github.io",
+  "homepage": "https://kamioca.github.io/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
