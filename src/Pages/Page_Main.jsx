@@ -13,12 +13,13 @@ import ResumePDF from "../Resume/Resume Novmber 2024.pdf";
 export default function Page_Main() {
   const pageStyle = {
     backgroundImage: `url(${mainBackground})`, 
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
     width: "100%",
     height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
   };
 
   const buttonStyle = {

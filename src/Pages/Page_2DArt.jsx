@@ -12,8 +12,8 @@ import { useNavigate } from 'react-router';
 export default function Page_2DArt() {
   const pageStyle = {
     background: 'linear-gradient(to top,rgb(182, 177, 224),rgb(255, 255, 255))',
-    width: "100%",
-    height: "100%",
+    minHeight: '100vh',
+    minWidth: "100vw",
     display: "flex",
     justifyContent: "center",
   };
@@ -48,7 +48,7 @@ export default function Page_2DArt() {
     <div style={pageStyle}>
       <Button variant="contained" size="large" style={backButtonStyle} onClick={onBackClick}>Home</Button>
       <Box px={5}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent="center" alignItems="center">
           <Grid size={12} item>
             <h1 style={{ fontSize: '60px' }} >2D Art</h1>
           <Box style={{ height: '5vh' }}></Box>

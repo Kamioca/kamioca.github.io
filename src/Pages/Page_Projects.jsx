@@ -10,8 +10,8 @@ import { useNavigate } from 'react-router';
 export default function Page_Projects() {
   const pageStyle = {
     background: 'linear-gradient(to top,rgb(254, 134, 216),rgb(232, 166, 228))',
-    width: "100%",
-    height: "100%",
+    minHeight: '100vh',
+    minWidth: "100vw",
     display: "flex",
     justifyContent: "center",
   };
@@ -65,7 +65,7 @@ export default function Page_Projects() {
             </CardHeader>
             <CardMedia
               component="img"
-              height="250"
+              height="225"
               image={projectDict.image}
               onClick={() => {openLinkInNewTab(projectDict.link)}}
             >
@@ -105,7 +105,7 @@ export default function Page_Projects() {
     <div style={pageStyle}>
       <Button variant="contained" size="large" style={backButtonStyle} onClick={onBackClick}>Home</Button>
       <Box px={5}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent="center" alignItems="center">
             <Grid size={12} item>
               <h1 style={{ fontSize: '60px', color:'white' }} >Projects</h1>
             </Grid>
