@@ -7,6 +7,7 @@ import mainBackground from "../Images/bg3.png";
 import linkedinImage from "../Images/Logos/LinkedIn_logo.png";
 import artstationImage from "../Images/Logos/Artstation_Logo.png";
 
+import font from "../Font/SourceSans3.ttf";
 // PDF
 import ResumePDF from "../Resume/Resume Novmber 2024.pdf";
 
@@ -19,12 +20,14 @@ export default function Page_Main() {
     height: "100%",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+      alignItems: "center",
+
   };
 
   const buttonStyle = {
     backgroundColor: "#C5436B",
-    color: "white"
+      color: "white",
+      fontFamily: "Source Sans Pro",
   };
 
   const navigate = useNavigate();
@@ -43,10 +46,10 @@ export default function Page_Main() {
   }
 
   return (
-    <div style={pageStyle}>
+    <div style={pageStyle} font={font}>
       <Grid container>
           <Grid size={12} item>
-            <h1 style={{ fontSize: '60px' }} >My Portfolio</h1>
+            <h1 style={{ fontSize: '60px', color: '#2C2A24' }} >My Portfolio</h1>
             <Stack direction="row" spacing={2}>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/Projects"); }} >Projects</Button>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/Animations"); }} >Animations</Button>

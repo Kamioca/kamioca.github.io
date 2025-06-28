@@ -1,5 +1,4 @@
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Grid, Typography } from '@mui/material';
-
 // Images
 import frogImage from "../Images/frog.png";
 import uhohaiImage from "../Images/uhohai.png";
@@ -9,11 +8,11 @@ import { useNavigate } from 'react-router';
 
 export default function Page_Projects() {
   const pageStyle = {
-    background: 'linear-gradient(to top,rgb(254, 134, 216),rgb(232, 166, 228))',
+      background: 'linear-gradient(to top,rgb(153, 32, 85),rgb(215, 171, 217))',
     minHeight: '100vh',
     minWidth: "100vw",
     display: "flex",
-    justifyContent: "center",
+      justifyContent: "center",
   };
 
   const projectList = [
@@ -60,14 +59,16 @@ export default function Page_Projects() {
           <Card>
             <CardHeader 
             title={projectDict.name}
-            subheader={projectDict.role}
+                      subheader={projectDict.role}
+                      sx={{fontFamily: "Source Sans Pro"}}
             >
             </CardHeader>
             <CardMedia
-              component="img"
-              height="225"
-              image={projectDict.image}
-              onClick={() => {openLinkInNewTab(projectDict.link)}}
+                      component="img"
+                      height="225"
+                      image={projectDict.image}
+                      onClick={() => { openLinkInNewTab(projectDict.link) }}
+                      
             >
             </CardMedia>
             <CardContent>
