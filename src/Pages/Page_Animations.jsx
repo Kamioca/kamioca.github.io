@@ -21,7 +21,7 @@ export default function Page_Animations() {
   };
 
   function createItemForImage(imageSrc) {
-    return <Grid md={4} sm={6} xs={12} item>
+    return <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
             <img style={imageStyle} src={imageSrc}></img>
           </Grid>;
   }
@@ -45,8 +45,10 @@ export default function Page_Animations() {
     <div style={pageStyle}>
       <Button variant="contained" size="large" style={backButtonStyle} onClick={onBackClick}>Home</Button>
       <Box px={5}>
+        {/* The box below is for adjusting the offset between the title and the top of the page. This offset is specifically to avoid home overlapping with the title on mobile */}
+        <Box style={{ height: '30px' }}/>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
-          <Grid size={12} item>
+          <Grid item size={12}>
             <h1 style={{ fontSize: '60px', color:'white' }} >Animations</h1>
           <Box style={{ height: '5vh' }}></Box>
           </Grid>
@@ -56,14 +58,14 @@ export default function Page_Animations() {
         </Grid>
         <Box style={{ height: '10vh' }}></Box>
         <Grid container spacing={2}>
-          <Grid md={4} sm={6} xs={12} item>
-            <YouTube videoId='/8QI-J5gShUA'/>
+          <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
+            <YouTube videoId='8QI-J5gShUA'/>
           </Grid>
-          <Grid md={4} sm={6} xs={12} item>
-            <YouTube videoId='/Mw2Lss19oY4'/>
+          <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
+            <YouTube videoId='Mw2Lss19oY4'/>
           </Grid>
-          <Grid md={4} sm={6} xs={12} item>
-            <YouTube videoId='/rHTmPo_1JmY'/>
+          <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
+            <YouTube videoId='rHTmPo_1JmY'/>
           </Grid>
         </Grid>
       </Box>

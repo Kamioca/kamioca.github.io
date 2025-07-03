@@ -55,8 +55,15 @@ export default function Page_Projects() {
     const projectItemList = [];
     projectList.forEach((projectDict) => {
       projectItemList.push(
-        <Grid md={3} sm={6} xs={12} item>
-          <Card>
+        <Grid item>
+          <Card sx={{ minWidth: '22vw', minHeight: '26vh', 
+                      width: '300px',
+                      transition: 'transform 0.2s ease-in-out',
+                      '&:hover': {
+                        transform: 'scale(1.03)',
+                        boxShadow: 6, // optional: adds depth on hover
+                      }
+                   }}>
             <CardHeader 
             title={projectDict.name}
                       subheader={projectDict.role}
@@ -67,12 +74,13 @@ export default function Page_Projects() {
                       component="img"
                       height="225"
                       image={projectDict.image}
+                      sx={{ cursor: 'pointer' }}
                       onClick={() => { openLinkInNewTab(projectDict.link) }}
                       
             >
             </CardMedia>
             <CardContent>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              <Typography variant="body2" sx={{ color: 'text.secondary', minHeight: '4vh', wordWrap: 'break-word' }}>
                 {projectDict.desc}
               </Typography>
             </CardContent>
@@ -106,6 +114,8 @@ export default function Page_Projects() {
     <div style={pageStyle}>
       <Button variant="contained" size="large" style={backButtonStyle} onClick={onBackClick}>Home</Button>
       <Box px={5}>
+        {/* The box below is for adjusting the offset between the title and the top of the page. This offset is specifically to avoid home overlapping with the title on mobile */}
+        <Box style={{ height: '30px' }}/>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
             <Grid size={12} item>
               <h1 style={{ fontSize: '60px', color:'white' }} >Projects</h1>
