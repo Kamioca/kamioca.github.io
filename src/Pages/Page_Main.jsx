@@ -9,7 +9,7 @@ import artstationImage from "../Images/Logos/Artstation_Logo.png";
 
 import font from "../Font/SourceSans3.ttf";
 // PDF
-import ResumePDF from "../Resume/Resume July2025.pdf";
+import ResumePDF from "../Resume/September Resume.pdf";
 
 export default function Page_Main() {
   const pageStyle = {
@@ -50,7 +50,7 @@ export default function Page_Main() {
       <Grid container>
           <Grid size={12} item>
                   <h1 style={{ fontSize: '60px', color: '#2C2A24', bottom:'-30px', position: 'relative' }} >Byung Hun Lee</h1>
-                  <h2 style={{ fontSize: '30px', color: '#2C2A23'}} >  2D/3D Artist/Animator </h2>
+                  <h2 style={{ fontSize: '30px', color: '#2C2A23'}} > Game Artist & Animator 2D/3D Artist </h2>
             <Stack direction="row" spacing={2}>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/Projects"); }} >Projects</Button>
               <Button variant="contained" size="large" style={buttonStyle} onClick={() => { onPageClick("/Animations"); }} >Animations</Button>
