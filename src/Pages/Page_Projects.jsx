@@ -33,7 +33,7 @@ export default function Page_Projects() {
     {
       name: "Habit of Force",
       image: hofImage,
-      role: "3D Artist, Modelling, Textures, Rigging, Animation, Assets.",
+      role: "3D Artist, Modelling, Textures, Rigging, Animations.",
       desc: "",
       link: "https://jordan-sadprofeso.itch.io/habit-of-force"
     },

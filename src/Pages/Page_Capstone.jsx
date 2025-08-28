@@ -72,16 +72,17 @@ export default function Page_Capstone() {
           <Grid size={12} item>
             <h1 style={{ fontSize: '60px', color:'white' }} >Capstone Project</h1>
           <Box style={{ height: '5vh' }}></Box>
-          </Grid>
+                  </Grid>
+            <Grid item size={{ xs: 16, sm: 16, md: 16 }}>
+                <YouTube videoId='x8ccMH5M8NM'/>
+            </Grid>
           {createItemForImage(cabinetImage)}
           {createItemForImage(floorImage)}
           {createItemForImage(roomImage)}
           {createItemForImage(tableImage)}
           {createItemForImage(tpImage)}
           {createItemForImage(swImage)}
-          <Grid item size={{ xs: 12, sm: 12, md: 12 }}>
-            <YouTube videoId='x8ccMH5M8NM'/>
-          </Grid>
+
         </Grid>
       </Box>
       {/* Fullscreen image dialogue*/}

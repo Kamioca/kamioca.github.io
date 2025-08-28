@@ -8,6 +8,7 @@ import foodImage from "../Images/2D/save-this-time-pls.jpg";
 import axeImage from "../Images/2D/axe.png";
 import crownImage from "../Images/2D/Crown.png";
 import shrineImage from "../Images/Other/image.png";
+import d6Image from "../Images/2D/d6.png";
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
 
@@ -73,9 +74,8 @@ export default function Page_2DArt() {
           </Grid>
           {createItemForImage(mp1Image)}
           {createItemForImage(mp2Image)}
-          {createItemForImage(mp3Image)}
+          {createItemForImage(d6Image)}
           {createItemForImage(axeImage)}
-          {createItemForImage(crownImage)}
           {createItemForImage(shrineImage)}
           {createItemForImage(foodImage)}
         </Grid>
